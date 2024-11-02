@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Home</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="index_css/style1.css"> <!-- Link to your external CSS -->
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">Café Delight</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto"> <!-- Added ml-auto to align links to the right -->
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="menu.html">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header with Video -->
+    <header class="header">
+        <video class="video" autoplay muted loop playsinline>
+            <source src="videos/VIDEO-2024-10-17-12-36-50.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="overlay">
+            <h1>Welcome to Café Delight</h1>
+            <p>Your perfect spot for great coffee and good vibes</p>
+        </div>
+    </header>
+
+    <!-- Quote Section -->
+    <section class="quote text-center my-4">
+        <blockquote class="blockquote">
+            <p class="mb-0">“Coffee is a hug in a mug.”</p>
+            <footer class="blockquote-footer">Unknown</footer>
+        </blockquote>
+    </section>
+
+   <!-- Product Categories Section -->
+<section id="categories" class="categories text-center my-5">
+    <h2>What's on the Menu</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/PHOTO-2024-10-17-11-46-09.jpg" class="card-img-top" alt="Coffee">
+                    <div class="card-body">
+                        <h5 class="card-title">Coffee</h5>
+                        <p class="card-text">Explore our rich and flavorful coffee selections.</p>
+                        <a href="menu.html" class="btn btn-primary">Explore</a> <!-- Button styled with Bootstrap -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/PHOTO-2024-10-17-11-46-05.jpg" class="card-img-top" alt="Pastries">
+                    <div class="card-body">
+                        <h5 class="card-title">Pastries</h5>
+                        <p class="card-text">Indulge in our freshly baked pastries and treats.</p>
+                        <a href="menu.html" class="btn btn-primary">Explore</a> <!-- Button styled with Bootstrap -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/PHOTO-2024-10-17-11-46-07.jpg" class="card-img-top" alt="Tea">
+                    <div class="card-body">
+                        <h5 class="card-title">Milkshakes</h5>
+                        <p class="card-text">Savor our selection of premium Milkshakes.</p>
+                        <a href="menu.html" class="btn btn-primary">Explore</a> <!-- Button styled with Bootstrap -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Location Section -->
+    <section id="location" class="location text-center my-5">
+        <h2>Find Us At</h2>
+        <p>1234 town center, Ndola city</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345093116!2d144.95373531531645!3d-37.81627997975103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f1d0db3%3A0x1c8ac86e7eebcd1e!2sCaf%C3%A9%20Delight!5e0!3m2!1sen!2sus!4v1631827758873!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer text-center">
+        <p>&copy; 2024 Café Delight. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

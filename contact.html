@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Contact Us - Café Delight</title>
+    <!-- <link rel="stylesheet" href="constyle.css">-- ---->
+</head>
+<style>
+    
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f4e3d7; /* Cream background */
+    color: #4b3621; /* Coffee brown text */
+    line-height: 1.6;
+}
+nav{
+    display: flex;
+    align-items: last baseline;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo{
+    width: 100px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: rgb(240, 175, 11);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    position: relative;
+}
+/* Header */
+.header {
+    
+    background-image: url(coffee.png);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    background-color: #8d6e63; /* Caramel */
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    
+}
+
+.header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    font-family: cursive;
+}
+
+.header p {
+    font-size: 1.2em;
+}
+
+/* Contact Section */
+.contact-section {
+    background-color: #d7b399; /* Light caramel */
+    padding: 40px;
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section h2 {
+    text-align: center;
+    color: #4b3621; /* Coffee brown */
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #8d6e63;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.contact-form button {
+    background-color: #4b3621; /* Coffee brown */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.1em;
+}
+
+.contact-form button:hover {
+    background-color: #8d6e63; /* Caramel */
+}
+
+/* Social Media Section */
+.social-media {
+    text-align: center;
+    margin: 40px auto;
+}
+
+.social-media h2 {
+    color: #4b3621;
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-link {
+    text-decoration: none;
+    color: #fff;
+    background-color: #4b3621; /* Coffee brown */
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.social-link:hover {
+    background-color: #8d6e63; /* Caramel */
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #4b3621; /* Coffee brown */
+    color: #fff;
+    margin-top: 40px;
+}
+
+</style>
+<body>
+    <header class="header">
+        <h1>Café Delight</h1>
+        
+        <nav class="navbar navbar-expand-lg">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto"> <!-- Added ml-auto to align links to the right -->
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <section class="contact-section">
+        <h2>Contact Us</h2>
+        <p>We'd love to hear from you! Reach out to us via the form below or through our social media.</p>
+
+        <form class="contact-form" action="#" method="post">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <section class="social-media">
+        <h2>Follow Us</h2>
+        <div class="social-icons">
+            <a href="#" target="_blank" class="social-link">Instagram</a>
+            <a href="#" target="_blank" class="social-link">Facebook</a>
+            <a href="#" target="_blank" class="social-link">LinkedIn</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 Café Delight</p>
+    </footer>
+</body>
+</html>

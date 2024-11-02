@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MENU</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f3e9dc;
+        }
+        nav{
+            display: flex;
+            align-items: last baseline;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        nav ul li{
+            display: inline-block;
+            list-style: none;
+            margin: 10px 20px;
+        }
+        nav ul li a::after{
+            content: '';
+            width: 0;
+            height: 3px;
+            background: rgb(240, 175, 11);
+            position: absolute;
+            left: 0;
+            bottom: -6px;
+            transition: 0.5s;
+        }
+        nav ul li a:hover::after{
+            width: 100%;
+        }
+        nav ul li a{
+            color: black;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 700;
+            position: relative;
+        }
+        h1 {
+            text-align: center;
+            color: #c08552;
+        }
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .menu-item {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        .menu-item:hover {
+            transform: scale(1.05);
+        }
+        .menu-item img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+        .item-info {
+            padding: 10px;
+            text-align: center;
+        }
+        .item-name {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .item-price {
+            color: #000000;
+            font-size: 1.1em;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg">
+        <h2>Café Delight</h2>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto"> <!-- Added ml-auto to align links to the right -->
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="menu.html">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <h1>OUR MENU</h1>
+    
+    <div class="menu-grid">
+        <div class="menu-item">
+            <img src="images/cinammon roll.JPG">
+            <div class="item-info">
+                <div class="item-name">cinammon Roll</div>
+                <div class="item-price">K17.00</div>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="images/latte.JPG">
+            <div class="item-info">
+                <div class="item-name">Latte </div>
+                <div class="item-price">K20.00</div>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="images/choco smoothie.JPG">
+            <div class="item-info">
+                <div class="item-name">Chocolate Smoothie</div>
+                <div class="item-price">K25.00</div>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="images/coffee.JPG">
+            <div class="item-info">
+                <div class="item-name">Black Coffee</div>
+                <div class="item-price">K20.00</div>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="images/donuts.JPG">
+            <div class="item-info">
+                <div class="item-name">Donuts</div>
+                <div class="item-price">K20.00</div>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="images/croissants.JPG">
+            <div class="item-info">
+                <div class="item-name">Croissants</div>
+                <div class="item-price">K17.00</div>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="images/IMG_0213.JPG">
+            <div class="item-info">
+                <div class="item-name">Ice tea</div>
+                <div class="item-price">K20.00</div>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="images/IMG_0258.JPG">
+            <div class="item-info">
+                <div class="item-name">macaron</div>
+                <div class="item-price">K50.00</div>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="images/IMG_0259.JPG">
+            <div class="item-info">
+                <div class="item-name">assorted cupcakes</div>
+                <div class="item-price">K20.00</div>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="images/soft drinks.JPG">
+            <div class="item-info">
+                <div class="item-name">assorted soft drinks</div>
+                <div class="item-price">K10.00</div>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="images/water.JPG">
+            <div class="item-info">
+                <div class="item-name">water</div>
+                <div class="item-price">K5.00</div>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="images/smoothie.JPG">
+            <div class="item-info">
+                <div class="item-name">assorted milkshakes</div>
+                <div class="item-price">K15.00</div>
+            </div>
+</div>
+</body>
+</html>
+
+
+
